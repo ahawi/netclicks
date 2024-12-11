@@ -242,6 +242,7 @@ h3 {
 
 .header {
   margin-top: 34px;
+  margin-bottom: 42px;
 }
 @media (max-width: 768px) {
   .header {
@@ -361,4 +362,80 @@ h3 {
     padding-left: 8px;
     padding-right: 8px;
   }
+}
+
+.section {
+  padding-bottom: 94px;
+}
+.section__inner {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.section__main-title {
+  margin-bottom: 25px;
+}
+.section__main-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 38px;
+}
+.section__main-film-title {
+  margin-top: 12px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+.section__main-film-description {
+  font-size: 16px;
+  margin-bottom: 11px;
+  color: #868686;
+}
+.section__main-film-rating {
+  font-size: 16px;
+  font-weight: 700;
+  color: #04a31e;
+}
+.section__main-poster {
+  max-width: 264px;
+}
+.section__sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section__sidebar-title {
+  margin-top: 10px;
+  font-weight: 700;
+}
+.section__sidebar-list {
+  margin-top: 23px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  flex: 1;
+}
+.section__sidebar-link {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.section__sidebar-block-title {
+  font-weight: 700;
+}
+.section__sidebar-block-description {
+  max-width: 215px;
+}
+.section__sidebar-item:nth-child(3) .section__sidebar-block-description {
+  max-width: 244px;
+}
+.section__coryright {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  color: #aaaaaa;
+}
+.section__coryright-link {
+  text-decoration: underline;
 }/*# sourceMappingURL=styles.css.map */

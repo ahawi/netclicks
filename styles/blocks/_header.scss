@@ -3,6 +3,7 @@
 
 .header {
   margin-top: 34px;
+  margin-bottom: 42px;
 
   @include media.mobile {
     margin: 15px;
@@ -30,8 +31,8 @@
     }
 
     &-burger-button {
-        background-color: transparent;
-        border: none;
+      background-color: transparent;
+      border: none;
     }
   }
 
