@@ -1,22 +1,55 @@
 @use "../var";
+@use "../media";
 
 .section {
-  padding-bottom: 94px;
   &__inner {
     display: flex;
     column-gap: 30px;
+
+    @include media.tablet {
+      flex-direction: column;
+      row-gap: 40px;
+    }
+
+    @include media.mobile-s {
+      align-items: center;
+    }
   }
 
   &__main {
     &-title {
-      margin-bottom: 25px;
+      margin-bottom: 32px;
     }
 
     &-list {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      justify-content: center;
       column-gap: 30px;
       row-gap: 38px;
+
+      @include media.tablet {
+        gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      @include media.mobile {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @include media.mobile-s {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 40px;
+      }
+    }
+
+    &-item {
+      @include media.mobile-s {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     }
 
     &-film {
@@ -24,12 +57,28 @@
         margin-top: 12px;
         font-weight: 400;
         margin-bottom: 4px;
+
+        @include media.tablet {
+          font-size: 14px;
+        }
+
+        @include media.mobile-s {
+          font-size: 16px;
+        }
       }
 
       &-description {
         font-size: 16px;
         margin-bottom: 11px;
         color: var.$color-gray;
+
+        @include media.tablet {
+          font-size: 14px;
+        }
+
+        @include media.mobile-s {
+          font-size: 16px;
+        }
       }
 
       &-rating {
@@ -40,7 +89,8 @@
     }
 
     &-poster {
-      max-width: 264px;
+      max-width: 100%;
+      height: auto;
     }
   }
 
@@ -49,9 +99,14 @@
     flex-direction: column;
     justify-content: space-between;
 
+    @include media.mobile-s {
+      align-items: center;
+    }
+
     &-title {
       margin-top: 10px;
       font-weight: 700;
+      align-self: start;
     }
 
     &-list {
@@ -60,6 +115,10 @@
       flex-direction: column;
       row-gap: 20px;
       flex: 1;
+
+      @include media.tablet {
+        margin-bottom: 120px;
+      }
     }
 
     &-link {
@@ -75,12 +134,28 @@
 
       &-description {
         max-width: 215px;
+
+        @include media.tablet {
+          max-width: 100%;
+        }
+
+        @include media.tablet {
+          max-width: 264px;
+        }
       }
     }
 
     &-item {
       &:nth-child(3) .section__sidebar-block-description {
         max-width: 244px;
+
+        @include media.tablet {
+          max-width: 100%;
+        }
+
+        @include media.tablet {
+          max-width: 264px;
+        }
       }
     }
   }

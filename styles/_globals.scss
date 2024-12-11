@@ -1,5 +1,6 @@
 @use "mixins";
 @use "var";
+@use "media";
 
 body {
   font-size: 14px;
@@ -30,7 +31,11 @@ h4 {
 }
 
 h1 {
-  @include mixins.fluid-text(24, 18);
+  font-size: 24px;
+
+  @include media.mobile {
+    font-size: 18px;
+  }
 }
 
 h2 {
