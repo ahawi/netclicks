@@ -1,7 +1,12 @@
 @use "../var";
+@use "../media";
 
 .header {
   margin-top: 34px;
+
+  @include media.mobile {
+    margin: 15px;
+  }
 
   &__inner {
     display: flex;
@@ -22,6 +27,11 @@
       &:hover {
         color: var.$color-accent;
       }
+    }
+
+    &-burger-button {
+        background-color: transparent;
+        border: none;
     }
   }
 

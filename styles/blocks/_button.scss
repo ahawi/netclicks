@@ -1,5 +1,6 @@
 @use "../var";
 @use "../mixins";
+@use "../media";
 
 .button {
   @include mixins.flex-center;
@@ -10,7 +11,7 @@
   column-gap: 9px;
   color: var.$color-light;
   padding-left: 14px;
-  padding-right: 22px;
+  padding-right: 19px;
   border-radius: var.$border-radius;
   cursor: pointer;
 
@@ -18,5 +19,10 @@
     background-color: var.$color-light;
     color: var.$color-dark;
     border: 3px solid var.$color-accent;
+  }
+
+  @include media.mobile-s {
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }
