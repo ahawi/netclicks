@@ -1,0 +1,45 @@
+@use "../var";
+
+.film-card {
+  &__inner {
+    display: flex;
+  }
+
+  &__center {
+    max-width: 348px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 30px;
+    margin-left: 28px;
+
+    &-header {
+      &-description {
+        margin-top: 3px;
+        font-size: 16px;
+        margin-bottom: 5px;
+        color: var.$color-gray;
+      }
+
+      &-rating {
+        font-size: 16px;
+        font-weight: 700;
+        color: var.$color-rating;
+      }
+    }
+
+    &-description {
+      flex: 1;
+      max-width: 335px;
+    }
+
+    &-button {
+      max-width: 236px;
+      height: 50px;
+    }
+  }
+
+  &__right {
+    margin-left: 43px;
+  }
+}

@@ -169,7 +169,7 @@ svg * {
   font-display: swap;
 }
 .container {
-  max-width: 1190px;
+  max-width: 1140px;
   margin-inline: auto;
   padding-inline: 10px;
 }
@@ -530,4 +530,108 @@ h3 {
     padding-left: 8px;
     padding-right: 8px;
   }
+}
+
+.film-card__inner {
+  display: flex;
+}
+.film-card__center {
+  max-width: 348px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 30px;
+  margin-left: 28px;
+}
+.film-card__center-header-description {
+  margin-top: 3px;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #868686;
+}
+.film-card__center-header-rating {
+  font-size: 16px;
+  font-weight: 700;
+  color: #04a31e;
+}
+.film-card__center-description {
+  flex: 1;
+  max-width: 335px;
+}
+.film-card__center-button {
+  max-width: 236px;
+  height: 50px;
+}
+.film-card__right {
+  margin-left: 43px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 480px) {
+  .sidebar {
+    align-items: center;
+  }
+}
+.sidebar__title {
+  font-weight: 700;
+  align-self: start;
+}
+.sidebar__list {
+  margin-top: 23px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  flex: 1;
+}
+@media (max-width: 1024px) {
+  .sidebar__list {
+    margin-bottom: 120px;
+  }
+}
+.sidebar__link {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.sidebar__block-title {
+  font-weight: 700;
+}
+.sidebar__block-description {
+  max-width: 215px;
+}
+@media (max-width: 1024px) {
+  .sidebar__block-description {
+    max-width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .sidebar__block-description {
+    max-width: 264px;
+  }
+}
+.sidebar__item:nth-child(3) .section__sidebar-block-description {
+  max-width: 244px;
+}
+@media (max-width: 1024px) {
+  .sidebar__item:nth-child(3) .section__sidebar-block-description {
+    max-width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .sidebar__item:nth-child(3) .section__sidebar-block-description {
+    max-width: 264px;
+  }
+}
+.sidebar__coryright {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  color: #aaaaaa;
+}
+.sidebar__coryright-link {
+  text-decoration: underline;
 }/*# sourceMappingURL=styles.css.map */
