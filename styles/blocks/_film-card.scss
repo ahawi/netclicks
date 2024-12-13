@@ -2,28 +2,37 @@
 @use "../media";
 
 .film-card {
+  @include media.mobile {
+    padding-inline: 15px;
+  }
+
   &__inner {
     display: flex;
 
-    @include media.tablet {
+    @include media.desktop {
       display: contents;
     }
 
     .hidden-tablet {
       display: flex;
       flex-direction: row;
+
+      @include media.desktop {
+        display: flex;
+        justify-content: space-between;
+        row-gap: 30px;
+      }
     }
 
     .visible-tablet {
       display: flex;
 
-      @include media.tablet {
+      @include media.desktop {
         display: flex;
         justify-content: space-between;
         row-gap: 30px;
       }
 
-      
       @include media.mobile {
         display: flex;
         flex-direction: column;
@@ -35,23 +44,25 @@
 
   &__left {
     &-image {
+      // max-width: 460px;
       height: auto;
+      border-radius: 20px;
     }
 
     @include media.tablet {
-      flex: 1;
+      // flex: 1;
     }
   }
 
   &__center {
-    max-width: 348px;
+    width: 343px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     row-gap: 30px;
     margin-left: 28px;
 
-    @include media.tablet {
+    @include media.desktop {
       max-width: 100%;
       flex: 1;
       margin-left: 20px;
@@ -60,6 +71,7 @@
     @include media.mobile {
       margin-left: 0;
       row-gap: 21px;
+      width: 100%;
     }
 
     &-header {
@@ -81,7 +93,7 @@
       flex: 1;
       max-width: 335px;
 
-      @include media.tablet {
+      @include media.desktop {
         max-width: 100%;
       }
     }
@@ -90,7 +102,7 @@
       max-width: 236px;
       height: 50px;
 
-      @include media.tablet {
+      @include media.desktop {
         max-width: 100%;
       }
 
@@ -103,12 +115,12 @@
   &__right {
     margin-left: 43px;
 
-    @include media.tablet {
+    @include media.desktop {
       margin-left: 0px;
       margin-top: 30px;
     }
 
-    @include media.tablet {
+    @include media.mobile {
       margin-top: 60px;
     }
   }
