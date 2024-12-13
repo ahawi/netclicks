@@ -23,3 +23,15 @@
     display: none !important;
   }
 }
+
+.hidden-tablet {
+  @include media.tablet {
+    display: none !important;
+  }
+}
+
+.visible-tablet {
+  @include media.tablet-above {
+    display: none !important;
+  }
+}
