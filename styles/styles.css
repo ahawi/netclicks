@@ -457,13 +457,13 @@ h3 {
     max-width: 264px;
   }
 }
-.section__coryright {
+.section__sidebar__coryright {
   display: flex;
   flex-direction: column;
   row-gap: 5px;
   color: #aaaaaa;
 }
-.section__coryright-link {
+.section__sidebar__coryright-link {
   text-decoration: underline;
 }
 
@@ -668,6 +668,7 @@ h3 {
 }
 .sidebar__title {
   font-weight: 700;
+  width: 246px;
 }
 .sidebar__list {
   margin-top: 23px;

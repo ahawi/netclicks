@@ -73,11 +73,12 @@
         <div class="header__extra">
           <div class="header__extra-field field">
             <input
+              data-js-search
               type="text"
               class="field__input"
               placeholder="Что хотите посмотреть?"
             />
-            <button class="header__extra-button button" type="button">
+            <button data-js-search-button class="header__extra-button button" type="button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -108,7 +109,26 @@
           <div class="section__main">
             <h1 class="section__main-title">Результаты поиска</h1>
             <ul class="section__main-list">
-              <li class="section__main-item">
+              <!-- <li class="section__main-item">
+                <a href="./film.html" class="section__main-link">
+                  <img
+                    src="./images/wrapper.jpeg"
+                    alt=""
+                    class="section__main-poster"
+                    width="264"
+                    height="376"
+                    loading="lazy"
+                  />
+                  <h2 class="section__main-film-title">
+                    <strong>Марсианин</strong>, The Martian 2015
+                  </h2>
+                  <p class="section__main-film-description">
+                    Фантастика, приключения
+                  </p>
+                  <span class="section__main-film-rating">7.8</span>
+                </a>
+              </li> -->
+              <!-- <li class="section__main-item">
                 <a href="./film.html" class="section__main-link">
                   <img
                     src="./images/wrapper.jpeg"
@@ -202,67 +222,46 @@
                   </p>
                   <span class="section__main-film-rating">7.8</span>
                 </a>
-              </li>
-              <li class="section__main-item">
-                <a href="./film.html" class="section__main-link">
-                  <img
-                    src="./images/wrapper.jpeg"
-                    alt=""
-                    class="section__main-poster"
-                    width="264"
-                    height="376"
-                    loading="lazy"
-                  />
-                  <h2 class="section__main-film-title">
-                    <strong>Марсианин</strong>, The Martian 2015
-                  </h2>
-                  <p class="section__main-film-description">
-                    Фантастика, приключения
-                  </p>
-                  <span class="section__main-film-rating">7.8</span>
-                </a>
-              </li>
+              </li> -->
             </ul>
           </div>
-          <div class="section__sidebar">
-            <h2 class="section__sidebar-title">Подборки фильмов и сериалов</h2>
-            <ul class="section__sidebar-list">
-              <li class="section__sidebar-item">
-                <a href="#" class="section__sidebar-link">
-                  <h3 class="section__sidebar-block-title">Топ-250</h3>
-                  <p class="section__sidebar-block-description">
+          <div class="section__right sidebar">
+            <h2 class="sidebar__title">Подборки фильмов и сериалов</h2>
+            <ul class="sidebar__list">
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link">
+                  <h3 class="sidebar__block-title">Топ-250</h3>
+                  <p class="sidebar__block-description">
                     Подборка фильмов и сериалов с наивысшими оценками зрителей
                   </p>
                 </a>
               </li>
-              <li class="section__sidebar-item">
-                <a href="#" class="section__sidebar-link">
-                  <h3 class="section__sidebar-block-title">
-                    Посмеяться от души
-                  </h3>
-                  <p class="section__sidebar-block-description">
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link">
+                  <h3 class="sidebar__block-title">Посмеяться от души</h3>
+                  <p class="sidebar__block-description">
                     Подборка комедий, которые помогут расслабиться после работы
                   </p>
                 </a>
               </li>
-              <li class="section__sidebar-item">
-                <a href="#" class="section__sidebar-link">
-                  <h3 class="section__sidebar-block-title">Запутанный сюжет</h3>
-                  <p class="section__sidebar-block-description">
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link">
+                  <h3 class="sidebar__block-title">Запутанный сюжет</h3>
+                  <p class="sidebar__block-description">
                     Триллеры и приключения с запутанным и интересным сюжетом.
                     Невозможно оторваться!
                   </p>
                 </a>
               </li>
             </ul>
-            <div class="section__coryright">
-              <p class="section__coryright-title">
+            <div class="sidebar__copyright">
+              <p class="sidebar__copyright-title">
                 © ООО "Неткликс", <time datetime="2024">2024</time>
               </p>
-              <a href="#" class="section__coryright-link"
+              <a href="#" class="sidebar__copyright-link"
                 >Политика конфиденциальности</a
               >
-              <a href="#" class="section__coryright-link"
+              <a href="#" class="sidebar__copyright-link"
                 >Обработка персональных данных</a
               >
             </div>
